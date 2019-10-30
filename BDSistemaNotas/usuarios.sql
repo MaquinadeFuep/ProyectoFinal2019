@@ -13,7 +13,6 @@ telefono varchar (9) not null,
 dui varchar (10) ,
 direccion varchar (100)  not null,
 genero varchar (1) not null,
-tipo_contrato varchar (50) not null,
 estado int default (1) not null,
 created datetime default (getdate()) ,
 updated datetime,
@@ -22,6 +21,7 @@ deleted datetime
 
 alter table usuarios add constraint pk_username primary key (username)
 --Procedimiento para agregar usuarios
+
 create procedure spu_agregarusuarios
 @nombreusuario varchar (30), 
 @contrasenia varchar (70),
@@ -32,13 +32,12 @@ create procedure spu_agregarusuarios
 @telefono varchar (9),
 @dui varchar (10),
 @direccion varchar (100),
-@genero varchar (1),
-@tipocontrato varchar (50)
+@genero varchar (1)
 as
-insert into usuarios (username,contrasenia,rol,nombre,apellido,fecha_nacimiento,telefono,dui,direccion,genero,tipo_contrato)
-values (@nombreusuario, @contrasenia, @rol, @nombre, @apellido, @fecha_nacimiento, @telefono, @dui, @direccion, @genero, @tipocontrato)
+insert into usuarios (username,contrasenia,rol,nombre,apellido,fecha_nacimiento,telefono,dui,direccion,genero)
+values (@nombreusuario, @contrasenia, @rol, @nombre, @apellido, @fecha_nacimiento, @telefono, @dui, @direccion, @genero)
 
-exec spu_agregarusuarios '','','','','','','','','','',''
+exec spu_agregarusuarios 'Polla1','12345','Admin','Vlady','Martinez','12/12/2000','7090-2332','09876542-1','Su casa','M'
 
 --Procedimiento para modificar usuario
 
@@ -50,8 +49,7 @@ create procedure spu_modificarusuario
 @telefono varchar (9),
 @dui varchar (10),
 @direccion varchar (100),
-@genero varchar (1),
-@tipocontrato varchar (50)
+@genero varchar (1)
 as
 update usuarios
 set		nombre=@nombre,
@@ -61,13 +59,10 @@ set		nombre=@nombre,
 		dui=@dui,
 		direccion=@direccion,
 		genero=@genero,
-		tipo_contrato=@tipocontrato,
 		updated=getdate()
 where username=@nombreusuario
 
-
-
-exec spu_modificarusuario '','','','','','','','',''
+exec spu_modificarusuario 'Polla1','pollito','pollin', '02/02/1998','2310-3962','09876542-1','Mi casa','M'
 
 --Procedimiento para borrado logico
 
@@ -79,5 +74,7 @@ set estado=0,
 	deleted=getdate()	
 where username=@id
 
-exec spu_borrado_logico_usuario ''
+exec spu_borrado_logico_usuario 'Polla1'
+
+
 
