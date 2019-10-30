@@ -1,4 +1,4 @@
 # ProyectoFinal2019
 ## Integrantes
-* David Stanley
+* David Maquina Fiera 
 * Vlady
