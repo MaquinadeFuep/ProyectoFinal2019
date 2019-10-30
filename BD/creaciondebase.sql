@@ -15,9 +15,8 @@ dui varchar (15) not null,
 direccion varchar (100)  not null,
 genero varchar (25) not null,
 tipo_contrato varchar (50) not null,
+estado int default (1) not null
 )
-
-alter table usuarios add estado int 
 
 alter table usuarios add constraint pk_username primary key (username)
 
@@ -41,11 +40,12 @@ create procedure spu_agregarusuarios
 @direccion varchar (100),
 @genero varchar (1),
 @tipocontrato varchar (50),
-@estado int
+@estado int 
+@updated datetime
 as
 insert into usuarios values (@nombreusuario, @contrasenia, @rol, @nombre, @apellido, @fecha_nacimiento, @telefono, @dui, @direccion, @genero, @tipocontrato,@estado)
 
-exec spu_agregarusuarios 'Usuario001', '12345', 'Administrador', 'Nume', 'Minu', '12/06/1987', '', '', 'San Salvador', 'F', 'Por Hora','1'
+exec spu_agregarusuarios 'Usuario002', '12345', 'Administrador', 'Nume', 'Minu', '12/06/1987', '', '', 'San Salvador', 'F', 'Por Hora','1'
 select * from usuarios
 --Procedimiento para borrar
 
@@ -58,7 +58,7 @@ begin
 delete from usuarios where username=@id;
 end
 
-exec spu_borrar_usuario 'Usuario004'
+exec spu_borrar_usuario 'Usuario001'
 
 --Procedimiento de actualizar 
 
@@ -91,9 +91,7 @@ genero=@genero,
 tipo_contrato=@tipo_contrato
 where username=@id
 
-exec spu_modificar_usuario 'Usuario001', '123pandahermoso','Estudiante','Vlady','Martinez','12/02/2000','2310-3962','09876543-1','San Juan Opico','M','Mined'
-
-
+exec spu_modificar_usuario 'Usuario002', '123pandahermoso','Estudiante','Vlady','Martinez','12/02/2000','2310-3962','09876543-1','San Juan Opico','M','Mined'
 
 select * from usuarios
 
@@ -107,7 +105,7 @@ set
 estado=0
 where username=@id
 
-exec spu_borradoLogicoUsuario 'Usuario001'
+exec spu_borradoLogicoUsuario 'Usuario002'
 
 --Procedimiento para motrado logico de usuario
 
@@ -119,4 +117,8 @@ set
 estado=1
 where username=@id
 
-exec spu_mostradoLogicoUsuario 'Usuario001'
+exec spu_mostradoLogicoUsuario 'Usuario002'
+
+
+alter table usuarios add created timestamp
+alter table usuarios add deleted  null

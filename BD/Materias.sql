@@ -5,8 +5,10 @@ create table materias
 id_materia varchar(15) not null,
 nombre varchar (30) not null,
 horas_semanales int not null,
-tipo_tecnico_general varchar (20) not null
+tipo_tecnico_general varchar (20) not null,
+estado int default (1) not null
 )
+
 alter table materias add constraint pk_materia primary key (id_materia)
 
 --Creaciones de procedimiento para agregar
