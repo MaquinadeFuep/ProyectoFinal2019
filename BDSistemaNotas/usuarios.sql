@@ -79,4 +79,4 @@ set estado=0,
 	deleted=getdate()	
 where username=@id
 
-exec spu_borrado_logico_usuario 'OSO232'
+exec spu_borrado_logico_usuario 'OSO122'
