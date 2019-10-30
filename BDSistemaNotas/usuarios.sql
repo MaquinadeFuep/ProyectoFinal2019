@@ -37,7 +37,7 @@ as
 insert into usuarios (username,contrasenia,rol,nombre,apellido,fecha_nacimiento,telefono,dui,direccion,genero)
 values (@nombreusuario, @contrasenia, @rol, @nombre, @apellido, @fecha_nacimiento, @telefono, @dui, @direccion, @genero)
 
-exec spu_agregarusuarios 'Polla1','12345','Admin','Vlady','Martinez','12/12/2000','7090-2332','09876542-1','Su casa','M'
+exec spu_agregarusuarios '','','','','','','','','',''
 
 --Procedimiento para modificar usuario
 
@@ -62,7 +62,7 @@ set		nombre=@nombre,
 		updated=getdate()
 where username=@nombreusuario
 
-exec spu_modificarusuario 'Polla1','pollito','pollin', '02/02/1998','2310-3962','09876542-1','Mi casa','M'
+exec spu_modificarusuario '','','', '','','','',''
 
 --Procedimiento para borrado logico
 
@@ -74,7 +74,8 @@ set estado=0,
 	deleted=getdate()	
 where username=@id
 
-exec spu_borrado_logico_usuario 'Polla1'
+exec spu_borrado_logico_usuario ''
+
 
 
 
