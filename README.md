@@ -1,4 +1,4 @@
 # ProyectoFinal2019
 ## Integrantes
 * David Maquina Fiera 
-* Vlady
+* Vlady te dick-ta
