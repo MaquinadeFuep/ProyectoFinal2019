@@ -25,8 +25,8 @@ as
 insert into materias(id_materia,nombre,horas_semanales,tipo_materia)
 values (@codigo,@nombre,@horas,@tipomateria)
 
-
-exec spu_agregarmateria 'MATE001', 'Matematicas', '20', 'Tècnica'
+select * from materias
+exec spu_agregarmateria '', '', '', ''
 
 
 ---Procedimiento de borrado-----------------
@@ -38,7 +38,7 @@ set estado = 0,
 	deleted = getdate()
 where id_materia = @codigo
 
-exec spu_borrarmateria 'MATE001'
+exec spu_borrarmateria ''
 
 
 
@@ -49,11 +49,13 @@ create procedure spu_modificarmateria
 @horas int,
 @tipomateria varchar (25)
 as 
-update materias set  nombre=@nombre, horas_semanales = @horas, tipo_materia = @tipomateria, updated = getdate() 
+update materias set  nombre=@nombre,
+					horas_semanales = @horas,
+					tipo_materia = @tipomateria, 
+					updated = getdate() 
 where id_materia = @codigo
 
-exec spu_modificarmateria 'MATE001', 'Matematicas', 15, 'Técnica'
-
+exec spu_modificarmateria '', '', 69, ''
 
 
 
