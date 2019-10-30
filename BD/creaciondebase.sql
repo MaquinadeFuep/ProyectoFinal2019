@@ -97,3 +97,26 @@ exec spu_modificar_usuario 'Usuario001', '123pandahermoso','Estudiante','Vlady',
 
 select * from usuarios
 
+--Procedimiento para Borrado logico de usuario
+
+create procedure spu_borradoLogicoUsuario
+@id varchar (30)
+as 
+update usuarios
+set 
+estado=0
+where username=@id
+
+exec spu_borradoLogicoUsuario 'Usuario001'
+
+--Procedimiento para motrado logico de usuario
+
+create procedure spu_mostradoLogicoUsuario
+@id varchar (30)
+as 
+update usuarios
+set 
+estado=1
+where username=@id
+
+exec spu_mostradoLogicoUsuario 'Usuario001'
