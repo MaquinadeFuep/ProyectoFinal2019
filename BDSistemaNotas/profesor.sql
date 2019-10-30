@@ -11,6 +11,9 @@ deleted datetime
 
 alter table profesor add constraint pk_profesor primary key (id_profesor)
 
+alter table profesor add  salario float not null
+alter table profesor add  tipo_contrato varchar (50) not null
+
 --Procedimiento para agregar profesor
 
 create procedure spu_agregar_profesor
@@ -31,3 +34,4 @@ where id_profesor=@id
 
 exec spu_borradoLogico_profesor ''
  
+ --cwhaghdgadjkhkjwhdkjwehdkwjedhwkjdhwk
