@@ -93,5 +93,7 @@ where username=@id
 
 exec spu_modificar_usuario 'Usuario001', '123pandahermoso','Estudiante','Vlady','Martinez','12/02/2000','2310-3962','09876543-1','San Juan Opico','M','Mined'
 
+
+
 select * from usuarios
 

@@ -1,4 +1,5 @@
 use SistemaDeNotas
+
 create table materias
 (
 id_materia varchar(15) not null,
