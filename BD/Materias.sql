@@ -31,7 +31,7 @@ end
 
 exec spu_borrar_materia 'Mate1'
 
---Creaciones de procedimiento para modificar- 
+--Creaciones de procedimiento para modificar nombre- 
 create procedure spu_modificar_nombre
 (
 @id varchar (15),
@@ -42,7 +42,35 @@ update materias
 set		nombre=@nombremate
 where id_materia=@id
 
+exec spu_modificar_nombre /* id */ 'Mate1', /* nombre que desea que desea que tenga */'Matelinguistica'
 
-exec spu_modificar_nombre 'Mate1', 'Matelinguistica'
+--Creaciones de procedimiento para modificar cantidad de horas semanales-- 
 
+create procedure spu_modificar_canthorassemanales
+(
+@id varchar (15),
+@horas_semanales int
+)
+as
+update materias
+set		horas_semanales=@horas_semanales
+where id_materia=@id
+
+exec spu_modificar_canthorassemanales/* id */ 'Mate1', /* nombre que desea que desea que tenga */'100'
+select * from materias
+
+
+--Creaciones de procedimiento para modificar cantidad de tipo tecnico o general-- 
+create procedure spu_modificar_tipoTecGene
+(
+@id varchar (15),
+@tipo_tecnico_general varchar (20)
+)
+as
+update materias
+set		tipo_tecnico_general=@tipo_tecnico_general 
+where id_materia=@id
+
+exec spu_modificar_tipoTecGene /* id */ 'Mate1', /* nombre que desea que desea que tenga */'Lass'
+select * from materias
 
