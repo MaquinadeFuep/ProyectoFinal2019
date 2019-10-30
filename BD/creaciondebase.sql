@@ -5,7 +5,7 @@ use SistemaDeNotas
 create table usuarios
 (
 username varchar (30) not null,
-contrasenia varchar (30) not null,
+contrasenia varchar (70) not null, 
 rol varchar (25) not null,
 nombre varchar (50) not null,
 apellido varchar (50) not null,
@@ -17,4 +17,4 @@ genero varchar (25) not null,
 tipo_contrato varchar (50) not null,
 )
 
-alter table usuarios alter column contrasenia varchar (70) not null
+alter table usuarios add constraint pk_username primary key (username)
