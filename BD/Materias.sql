@@ -43,6 +43,6 @@ set		nombre=@nombremate
 where id_materia=@id
 
 
-exec spu_modificar_nombre ''
+exec spu_modificar_nombre 'Mate1', 'Matelinguistica'
 
 
