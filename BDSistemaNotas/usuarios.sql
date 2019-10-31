@@ -76,6 +76,8 @@ where username=@id
 
 exec spu_borrado_logico_usuario ''
 
+alter table usuarios add nie varchar (7) 
+alter table usuarios add id_profesor varchar (15)
 
 
 
