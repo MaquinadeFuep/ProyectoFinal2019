@@ -1,66 +1,48 @@
 create database SistemaNotas
+
 use SistemaNotas
 
-create table usuarios 
+create table usuario 
 (
-username varchar (30) not null,
-contrasenia varchar (70) not null, 
-rol varchar (25) not null,
-nombre varchar (50) not null,
-apellido varchar (50) not null,
-fecha_nacimiento date not null,
-telefono varchar (9) not null,
-dui varchar (10) ,
-direccion varchar (100)  not null,
-genero varchar (1) not null,
+idUsuario varchar (15) not null,
+username varchar (50) not null,
+contrasenia varchar (50) not null,
+rol varchar (20) not null,
+relacion varchar (50) not null,
 estado int default (1) not null,
-created datetime default (getdate()) ,
+created datetime default (getdate()),
 updated datetime,
 deleted datetime
 )
+alter table usuario add constraint pk_id_usuario primary key (idUsuario)
 
-alter table usuarios add constraint pk_username primary key (username)
 --Procedimiento para agregar usuarios
 
 create procedure spu_agregarusuarios
-@nombreusuario varchar (30), 
-@contrasenia varchar (70),
-@rol varchar (25),
-@nombre varchar (50),
-@apellido varchar (50),
-@fecha_nacimiento date,
-@telefono varchar (9),
-@dui varchar (10),
-@direccion varchar (100),
-@genero varchar (1)
+@id_usuario varchar (15),
+@username varchar (50),
+@contrasenia varchar (50),
+@rol varchar (20), 
+@relacion varchar (50)
 as
-insert into usuarios (username,contrasenia,rol,nombre,apellido,fecha_nacimiento,telefono,dui,direccion,genero)
-values (@nombreusuario, @contrasenia, @rol, @nombre, @apellido, @fecha_nacimiento, @telefono, @dui, @direccion, @genero)
+insert into usuario (idUsuario, username, contrasenia, rol, relacion)
+values (@id_usuario, @username, @contrasenia, @rol, @relacion)
 
 exec spu_agregarusuarios '','','','','','','','','',''
 
 --Procedimiento para modificar usuario
 
 create procedure spu_modificarusuario
-@nombreusuario varchar (30), 
-@nombre varchar (50),
-@apellido varchar (50),
-@fecha_nacimiento date,
-@telefono varchar (9),
-@dui varchar (10),
-@direccion varchar (100),
-@genero varchar (1)
+@id_usuario varchar (15),
+@username varchar (50),
+@contrasenia  varchar (50),
+@relacion varchar (50)
 as
-update usuarios
-set		nombre=@nombre,
-		apellido=@apellido,
-		fecha_nacimiento=@fecha_nacimiento,
-		telefono=@telefono,
-		dui=@dui,
-		direccion=@direccion,
-		genero=@genero,
-		updated=getdate()
-where username=@nombreusuario
+update usuario
+set		username = @username,
+		contrasenia = @contrasenia,
+		updated = getdate()
+where idUsuario = @id_usuario
 
 exec spu_modificarusuario '','','', '','','','',''
 
@@ -69,10 +51,10 @@ exec spu_modificarusuario '','','', '','','','',''
 create procedure spu_borrado_logico_usuario
 @id varchar (30)
 as
-update usuarios
+update usuario
 set estado=0,
 	deleted=getdate()	
-where username=@id
+where idUsuario=@id
 
 exec spu_borrado_logico_usuario ''
 

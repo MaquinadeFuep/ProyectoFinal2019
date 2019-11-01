@@ -1,55 +1,81 @@
 use SistemaNotas
 
-create table profesor
+create table profesores
 (
-id_profesor varchar (15) not null,
+escalafon varchar (15) not null,
+dui varchar (10) not null,
+nombre varchar (50) not null,
+apellido varchar (50) not null, 
+fecha_nacimiento date not null,
+estado_civil varchar (15) not null,
+telefono varchar (10) not null,
+direccion varchar (70) not null,
+genero varchar (10) not null,
+salario money not null,
 estado int default (1) not null,
 created datetime default (getdate()) ,
 updated datetime,
 deleted datetime
 )
 
-alter table profesor add constraint pk_profesor primary key (id_profesor)
+alter table profesores add constraint pk_profesor primary key (escalafon)
 
-alter table profesor add  salario float not null
-alter table profesor add  tipo_contrato varchar (50) not null
-
-alter table profesor alter column salario money  not null
 
 --Procedimiento para agregar profesor
 
 create procedure spu_agregar_profesor
-@id varchar (15),
-@salario money,
-@tipo_contrato varchar (50)
+@idprofesor varchar (15),
+@dui varchar (10),
+@nombre varchar (50),
+@apellido varchar (50),
+@fecha_nacimiento date,
+@estado varchar (15),
+@telefono varchar (10),
+@direccion varchar (70),
+@genero varchar (10),
+@salario money
 as
-insert into profesor (id_profesor,salario,tipo_contrato) values (@id,@salario,@tipo_contrato)
+insert into profesores (escalafon,dui, nombre, apellido, fecha_nacimiento, estado_civil, telefono, direccion, genero, salario)
+values (@idprofesor,@dui, @nombre, @apellido, @fecha_nacimiento, @estado, @telefono, @direccion, @genero, @salario)
 
-exec spu_agregar_profesor '','',''
+exec spu_agregar_profesor 
 
 
 --Procedimiento para eliminación logica de profesor
+
 create procedure spu_borradoLogico_profesor
 @id varchar (15)
 as
-update profesor
+update profesores
 set estado=0 ,
 	deleted=getdate()
-where id_profesor=@id
+where escalafon=@id
 
 exec spu_borradoLogico_profesor ''
  
  --Procedimiento para modificación de profesor
-
+ 
 create procedure spu_modificacion_profesor
 @id varchar (15),
-@salario money,
-@tipo_contrato varchar (50)
+@nombre varchar (50),
+@apellido varchar (50),
+@fecha_nacimiento date,
+@estado varchar (15),
+@telefono varchar (10),
+@direccion varchar (70),
+@genero varchar (10),
+@salario money
 as
-update profesor
-set salario=@salario,
-	tipo_contrato=@tipo_contrato,
+update profesores
+set nombre = @nombre,
+	apellido = @apellido,
+	fecha_nacimiento = @fecha_nacimiento,
+	estado_civil = @estado,
+	telefono = @telefono,
+	direccion = @direccion,
+	genero = @genero,
+	salario = @salario,
 	updated=getdate()
-where id_profesor=@id
+where escalafon = @id
 
-exec spu_modificacion_profesor '','',''
+exec spu_modificacion_profesor 
