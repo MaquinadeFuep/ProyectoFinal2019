@@ -1,4 +1,4 @@
-use SistemaNotas
+	use SistemaNotas
 
 create table estudiante_materia
 (

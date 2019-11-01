@@ -16,4 +16,6 @@ updated datetime,
 deleted datetime,
 )
 
+alter table notas add id_materia varchar (15) not null
+
 -- no se si asi va bien
