@@ -17,6 +17,8 @@ deleted datetime
 )
 
 alter table alumnos add constraint pk_alumnos primary key (nie)
+alter table alumnos add id_grado varchar (15) not null
+
 
 create procedure spu_agregarestudiante
 @id varchar (7),
