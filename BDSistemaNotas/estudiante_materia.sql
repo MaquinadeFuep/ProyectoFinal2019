@@ -9,4 +9,7 @@ nie varchar (7) not null,
 )
 
 alter table estudiante_materia add constraint pk_estudiante_materia primary key (id_estudiante_materia)
+<<<<<<< HEAD
+=======
 --NOTA, LLAVES PRIMARIA AGREGADA, NIE AGREGADO NOT NULL
+>>>>>>> 099dd2fb1e6e9deef073562a4ac497e72e3c65fb

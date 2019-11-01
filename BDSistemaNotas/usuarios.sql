@@ -58,5 +58,9 @@ where idUsuario=@id
 
 exec spu_borrado_logico_usuario ''
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 099dd2fb1e6e9deef073562a4ac497e72e3c65fb
 
 
