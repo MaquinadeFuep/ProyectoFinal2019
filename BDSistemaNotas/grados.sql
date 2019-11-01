@@ -11,6 +11,9 @@ updated datetime,
 deleted datetime,
 )
 
+alter table grado add id_especialidad varchar (15) not null
+
+
 
 alter table grado add constraint pk_grado primary key (id_grado)
 

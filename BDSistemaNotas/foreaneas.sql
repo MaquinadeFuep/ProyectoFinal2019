@@ -23,7 +23,7 @@ alter table profesor_materia add constraint fk_materia2 foreign key (id_materia1
 
 
 
-
+alter table grado add constraint fk_especialidad foreign key (id_especialidad) references especialidad (id_especialidad)
 
 
 
