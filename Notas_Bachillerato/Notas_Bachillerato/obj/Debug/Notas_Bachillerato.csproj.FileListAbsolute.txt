@@ -1,0 +1,19 @@
+E:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\bin\Debug\Notas_Bachillerato.exe.config
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\bin\Debug\Notas_Bachillerato.exe.config
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\bin\Debug\Notas_Bachillerato.exe
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\bin\Debug\Notas_Bachillerato.pdb
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csprojResolveAssemblyReference.cache
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Formularios.frmUsuarios.resources
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Principal.resources
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Properties.Resources.resources
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.GenerateResource.Cache
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.exe
+D:\Proyecto 2° Ciclo\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.pdb
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csprojAssemblyReference.cache
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Formularios.frmUsuarios.resources
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Principal.resources
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Properties.Resources.resources
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.GenerateResource.cache
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.CoreCompileInputs.cache
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.exe
+C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.pdb
