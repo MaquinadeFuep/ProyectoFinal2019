@@ -17,3 +17,11 @@ C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Ba
 C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.CoreCompileInputs.cache
 C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.exe
 C:\Users\jose\Downloads\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.pdb
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csprojAssemblyReference.cache
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Formularios.frmUsuarios.resources
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Principal.resources
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.Properties.Resources.resources
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.GenerateResource.cache
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.csproj.CoreCompileInputs.cache
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.exe
+C:\Users\Tony\Desktop\ProyectoFinal2019\Notas_Bachillerato\Notas_Bachillerato\obj\Debug\Notas_Bachillerato.pdb
