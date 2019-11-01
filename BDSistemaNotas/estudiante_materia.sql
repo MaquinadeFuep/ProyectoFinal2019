@@ -8,4 +8,4 @@ anio int not null,
 nie varchar (7) not null,
 )
 
---aqui no le agregue clave porque no se si llevan 
+alter table estudiante_materia add constraint pk_estudiante_materia primary key (id_estudiante_materia)
