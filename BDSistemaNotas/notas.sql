@@ -17,5 +17,5 @@ deleted datetime,
 )
 
 alter table notas add id_materia varchar (15) not null
-
+alter table notas add constraint pk_notas primary key (id_nota)
 -- no se si asi va bien
