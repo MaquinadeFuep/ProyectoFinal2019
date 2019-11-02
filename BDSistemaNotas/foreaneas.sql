@@ -20,12 +20,16 @@ alter table nota add constraint fk_materia1 foreign key (id_materia) references 
 alter table profesor_materia add constraint fk_profesor foreign key (id_profesor) references profesor (escalafon)
 alter table profesor_materia add constraint fk_materia2 foreign key (id_materia1) references materia (id_materia)
 
+<<<<<<< HEAD
 
 alter table grado add constraint fk_especialidad foreign key (id_especialidad) references especialidad (id_especialidad)
 
+=======
+>>>>>>> e87ad8723e6015a87cf4ea7e6f0959ed0f0f3806
 
 
 
+alter table grado add constraint fk_especialidad foreign key (id_especialidad) references especialidad (id_especialidad)
 
 
 

@@ -10,4 +10,10 @@ updated datetime,
 deleted datetime,
 );
 
+<<<<<<< HEAD
 alter table especialidad add constraint pk_especialidad primary key (id_especialidad)
+=======
+alter table especialidad add constraint pk_especialidad primary key (id_especialidad)
+
+
+>>>>>>> e87ad8723e6015a87cf4ea7e6f0959ed0f0f3806
