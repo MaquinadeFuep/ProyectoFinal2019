@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbEspecialidadAdmin = new System.Windows.Forms.ComboBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,14 +196,23 @@
             // 
             // cmbEspecialidadAdmin
             // 
+            this.cmbEspecialidadAdmin.Enabled = false;
             this.cmbEspecialidadAdmin.FormattingEnabled = true;
             this.cmbEspecialidadAdmin.Items.AddRange(new object[] {
-            "General",
-            "ITSI"});
+            "General"});
             this.cmbEspecialidadAdmin.Location = new System.Drawing.Point(226, 220);
             this.cmbEspecialidadAdmin.Name = "cmbEspecialidadAdmin";
             this.cmbEspecialidadAdmin.Size = new System.Drawing.Size(126, 21);
             this.cmbEspecialidadAdmin.TabIndex = 73;
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(12, 415);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 74;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
             // frmAdminGrado
             // 
@@ -210,6 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cmbEspecialidadAdmin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbSeccionAdmin);
@@ -253,5 +264,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbEspecialidadAdmin;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

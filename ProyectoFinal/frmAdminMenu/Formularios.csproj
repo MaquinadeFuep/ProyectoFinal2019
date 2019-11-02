@@ -89,10 +89,25 @@
     <Compile Include="FormulariosAdmin\frmAdminGrado.Designer.cs">
       <DependentUpon>frmAdminGrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosEstudents\frmInformeNotasEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosEstudents\frmInformeNotasEstudiante.Designer.cs">
+      <DependentUpon>frmInformeNotasEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosEstudents\frmVerNotasEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosEstudents\frmVerNotasEstudiante.Designer.cs">
+      <DependentUpon>frmVerNotasEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioProfe\frmComprobarProfe.resx">
       <DependentUpon>frmComprobarProfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProfe\frmIngresarNotasProfe.resx">
+      <DependentUpon>frmIngresarNotasProfe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosAdmin\frmAdminGrado.resx">
       <DependentUpon>frmAdminGrado.cs</DependentUpon>
@@ -108,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosAdmin\frmAdminProfesor.resx">
       <DependentUpon>frmAdminProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosEstudents\frmInformeNotasEstudiante.resx">
+      <DependentUpon>frmInformeNotasEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosEstudents\frmVerNotasEstudiante.resx">
+      <DependentUpon>frmVerNotasEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
