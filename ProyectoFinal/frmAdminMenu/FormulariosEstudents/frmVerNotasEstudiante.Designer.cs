@@ -74,12 +74,14 @@
             // 
             // btnVerNotas
             // 
-            this.btnVerNotas.Location = new System.Drawing.Point(128, 208);
+            this.btnVerNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerNotas.Location = new System.Drawing.Point(98, 224);
             this.btnVerNotas.Name = "btnVerNotas";
-            this.btnVerNotas.Size = new System.Drawing.Size(75, 23);
+            this.btnVerNotas.Size = new System.Drawing.Size(118, 29);
             this.btnVerNotas.TabIndex = 110;
             this.btnVerNotas.Text = "Ver notas";
             this.btnVerNotas.UseVisualStyleBackColor = true;
+            this.btnVerNotas.Click += new System.EventHandler(this.BtnVerNotas_Click);
             // 
             // cmbMateria
             // 
@@ -126,6 +128,7 @@
             this.cmbAnio.Name = "cmbAnio";
             this.cmbAnio.Size = new System.Drawing.Size(126, 21);
             this.cmbAnio.TabIndex = 114;
+            this.cmbAnio.SelectedIndexChanged += new System.EventHandler(this.CmbAnio_SelectedIndexChanged);
             // 
             // frmVerNotasEstudiante
             // 

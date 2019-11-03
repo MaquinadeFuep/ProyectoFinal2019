@@ -34,5 +34,17 @@ namespace frmAdminMenu.FormulariosAdmin
         {
 
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            frmAdminMenu menu = new frmAdminMenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void CmbEspecialidadAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

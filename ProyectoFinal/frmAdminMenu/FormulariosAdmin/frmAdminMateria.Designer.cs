@@ -36,16 +36,13 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtIdMateria = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtBusquedaID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBusquedaNombreApellido = new System.Windows.Forms.TextBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +60,7 @@
             // 
             // txtHorasSemanales
             // 
-            this.txtHorasSemanales.Location = new System.Drawing.Point(223, 188);
+            this.txtHorasSemanales.Location = new System.Drawing.Point(223, 183);
             this.txtHorasSemanales.Name = "txtHorasSemanales";
             this.txtHorasSemanales.Size = new System.Drawing.Size(124, 20);
             this.txtHorasSemanales.TabIndex = 69;
@@ -124,13 +121,6 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // txtIdMateria
-            // 
-            this.txtIdMateria.Location = new System.Drawing.Point(223, 96);
-            this.txtIdMateria.Name = "txtIdMateria";
-            this.txtIdMateria.Size = new System.Drawing.Size(124, 20);
-            this.txtIdMateria.TabIndex = 62;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -145,21 +135,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(45, 182);
+            this.label8.Location = new System.Drawing.Point(45, 177);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 26);
             this.label8.TabIndex = 60;
             this.label8.Text = "Horas Semanales";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 26);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Id Materia";
             // 
             // label1
             // 
@@ -178,28 +158,11 @@
             this.txtNombre.Size = new System.Drawing.Size(124, 20);
             this.txtNombre.TabIndex = 72;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 336);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 26);
-            this.label3.TabIndex = 73;
-            this.label3.Text = "Buscar materia por ID";
-            // 
-            // txtBusquedaID
-            // 
-            this.txtBusquedaID.Location = new System.Drawing.Point(281, 336);
-            this.txtBusquedaID.Name = "txtBusquedaID";
-            this.txtBusquedaID.Size = new System.Drawing.Size(124, 20);
-            this.txtBusquedaID.TabIndex = 74;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 374);
+            this.label4.Location = new System.Drawing.Point(13, 288);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(243, 26);
             this.label4.TabIndex = 75;
@@ -207,10 +170,21 @@
             // 
             // txtBusquedaNombreApellido
             // 
-            this.txtBusquedaNombreApellido.Location = new System.Drawing.Point(281, 380);
+            this.txtBusquedaNombreApellido.Location = new System.Drawing.Point(223, 317);
             this.txtBusquedaNombreApellido.Name = "txtBusquedaNombreApellido";
             this.txtBusquedaNombreApellido.Size = new System.Drawing.Size(124, 20);
             this.txtBusquedaNombreApellido.TabIndex = 76;
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(688, 497);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(103, 33);
+            this.btnAtras.TabIndex = 77;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // frmAdminMateria
             // 
@@ -218,10 +192,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(822, 542);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.txtBusquedaNombreApellido);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtBusquedaID);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.cmbTipoMateria);
             this.Controls.Add(this.txtHorasSemanales);
@@ -231,10 +204,8 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtIdMateria);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAdminMateria";
             this.Text = " Materia";
@@ -254,15 +225,12 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtIdMateria;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBusquedaID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBusquedaNombreApellido;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

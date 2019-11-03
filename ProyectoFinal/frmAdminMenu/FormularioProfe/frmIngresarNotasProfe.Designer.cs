@@ -40,6 +40,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnModificarAdmin = new System.Windows.Forms.Button();
             this.btnAdminAgregar = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,12 +151,23 @@
             this.btnAdminAgregar.Text = "Agregar";
             this.btnAdminAgregar.UseVisualStyleBackColor = true;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(34, 348);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 103;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
             // frmIngresarNotasProfe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnModificarAdmin);
             this.Controls.Add(this.btnAdminAgregar);
             this.Controls.Add(this.textBox3);
@@ -190,5 +202,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnModificarAdmin;
         private System.Windows.Forms.Button btnAdminAgregar;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

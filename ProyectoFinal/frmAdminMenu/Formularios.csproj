@@ -52,12 +52,11 @@
     <Compile Include="FormularioProfe\frmIngresarNotasProfe.Designer.cs">
       <DependentUpon>frmIngresarNotasProfe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioProfe\frmComprobarProfe.cs">
+    <Compile Include="FormularioProfe\frmProfeComprobar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioProfe\.Designer.cs">
-      <DependentUpon>frmComprobarProfe.cs</DependentUpon>
-      <SubType>Form</SubType>
+    <Compile Include="FormularioProfe\frmProfeComprobar.Designer.cs">
+      <DependentUpon>frmProfeComprobar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormulariosAdmin\frmAdminMateria.cs">
       <SubType>Form</SubType>
@@ -103,11 +102,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormularioProfe\frmComprobarProfe.resx">
-      <DependentUpon>frmComprobarProfe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormularioProfe\frmIngresarNotasProfe.resx">
       <DependentUpon>frmIngresarNotasProfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProfe\frmProfeComprobar.resx">
+      <DependentUpon>frmProfeComprobar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosAdmin\frmAdminGrado.resx">
       <DependentUpon>frmAdminGrado.cs</DependentUpon>

@@ -15,6 +15,14 @@ namespace frmAdminMenu
         public frmAdminMateria()
         {
             InitializeComponent();
+            cmbTipoMateria.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            frmAdminMenu menu = new frmAdminMenu();
+            menu.Show();
+            this.Hide();
         }
     }
 }

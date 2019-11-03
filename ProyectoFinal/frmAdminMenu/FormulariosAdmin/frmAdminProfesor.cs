@@ -16,5 +16,22 @@ namespace frmAdminMenu
         {
             InitializeComponent();
         }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            frmAdminMenu menu = new frmAdminMenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

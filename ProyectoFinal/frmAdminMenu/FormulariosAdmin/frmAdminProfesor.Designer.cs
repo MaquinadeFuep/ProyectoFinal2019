@@ -33,10 +33,10 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -58,14 +58,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.ckboxSociales = new System.Windows.Forms.CheckBox();
+            this.ckBoxCiencias = new System.Windows.Forms.CheckBox();
+            this.ckBoxLenguaje = new System.Windows.Forms.CheckBox();
+            this.ckBoxMatematicas = new System.Windows.Forms.CheckBox();
+            this.ckBoxIngles = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,43 +112,43 @@
             this.dataGridView1.Size = new System.Drawing.Size(657, 359);
             this.dataGridView1.TabIndex = 53;
             // 
-            // button4
+            // btnEliminar
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(265, 507);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 32);
-            this.button4.TabIndex = 52;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(265, 507);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(105, 32);
+            this.btnEliminar.TabIndex = 52;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnNuevo
             // 
-            this.button3.Location = new System.Drawing.Point(93, 514);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "Nuevo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNuevo.Location = new System.Drawing.Point(93, 514);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 51;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.Location = new System.Drawing.Point(183, 514);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(183, 514);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 50;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(12, 514);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(12, 514);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 49;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -159,6 +160,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 21);
             this.comboBox1.TabIndex = 48;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // maskedTextBox2
             // 
@@ -340,56 +342,57 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(125, 21);
             this.comboBox2.TabIndex = 62;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
-            // checkBox1
+            // ckboxSociales
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(13, 476);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(66, 17);
-            this.checkBox1.TabIndex = 63;
-            this.checkBox1.Text = "Sociales";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckboxSociales.AutoSize = true;
+            this.ckboxSociales.Location = new System.Drawing.Point(13, 476);
+            this.ckboxSociales.Name = "ckboxSociales";
+            this.ckboxSociales.Size = new System.Drawing.Size(66, 17);
+            this.ckboxSociales.TabIndex = 63;
+            this.ckboxSociales.Text = "Sociales";
+            this.ckboxSociales.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // ckBoxCiencias
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(253, 476);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(66, 17);
-            this.checkBox2.TabIndex = 64;
-            this.checkBox2.Text = "Ciencias";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ckBoxCiencias.AutoSize = true;
+            this.ckBoxCiencias.Location = new System.Drawing.Point(253, 476);
+            this.ckBoxCiencias.Name = "ckBoxCiencias";
+            this.ckBoxCiencias.Size = new System.Drawing.Size(66, 17);
+            this.ckBoxCiencias.TabIndex = 64;
+            this.ckBoxCiencias.Text = "Ciencias";
+            this.ckBoxCiencias.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // ckBoxLenguaje
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(177, 476);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(70, 17);
-            this.checkBox3.TabIndex = 65;
-            this.checkBox3.Text = "Lenguaje";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ckBoxLenguaje.AutoSize = true;
+            this.ckBoxLenguaje.Location = new System.Drawing.Point(177, 476);
+            this.ckBoxLenguaje.Name = "ckBoxLenguaje";
+            this.ckBoxLenguaje.Size = new System.Drawing.Size(70, 17);
+            this.ckBoxLenguaje.TabIndex = 65;
+            this.ckBoxLenguaje.Text = "Lenguaje";
+            this.ckBoxLenguaje.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // ckBoxMatematicas
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(85, 476);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(86, 17);
-            this.checkBox4.TabIndex = 66;
-            this.checkBox4.Text = "Matematicas";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ckBoxMatematicas.AutoSize = true;
+            this.ckBoxMatematicas.Location = new System.Drawing.Point(85, 476);
+            this.ckBoxMatematicas.Name = "ckBoxMatematicas";
+            this.ckBoxMatematicas.Size = new System.Drawing.Size(86, 17);
+            this.ckBoxMatematicas.TabIndex = 66;
+            this.ckBoxMatematicas.Text = "Matematicas";
+            this.ckBoxMatematicas.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // ckBoxIngles
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(335, 476);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(54, 17);
-            this.checkBox5.TabIndex = 67;
-            this.checkBox5.Text = "Ingles";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.ckBoxIngles.AutoSize = true;
+            this.ckBoxIngles.Location = new System.Drawing.Point(335, 476);
+            this.ckBoxIngles.Name = "ckBoxIngles";
+            this.ckBoxIngles.Size = new System.Drawing.Size(54, 17);
+            this.ckBoxIngles.TabIndex = 67;
+            this.ckBoxIngles.Text = "Ingles";
+            this.ckBoxIngles.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -419,20 +422,31 @@
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 71;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(966, 514);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(88, 32);
+            this.btnAtras.TabIndex = 72;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
             // frmAdminProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(1066, 558);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.ckBoxIngles);
+            this.Controls.Add(this.ckBoxMatematicas);
+            this.Controls.Add(this.ckBoxLenguaje);
+            this.Controls.Add(this.ckBoxCiencias);
+            this.Controls.Add(this.ckboxSociales);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label13);
@@ -442,10 +456,10 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.textBox6);
@@ -478,10 +492,10 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.TextBox textBox6;
@@ -503,13 +517,14 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox ckboxSociales;
+        private System.Windows.Forms.CheckBox ckBoxCiencias;
+        private System.Windows.Forms.CheckBox ckBoxLenguaje;
+        private System.Windows.Forms.CheckBox ckBoxMatematicas;
+        private System.Windows.Forms.CheckBox ckBoxIngles;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

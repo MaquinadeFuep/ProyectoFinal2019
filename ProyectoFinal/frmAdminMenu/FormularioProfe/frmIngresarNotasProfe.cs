@@ -16,5 +16,12 @@ namespace frmAdminMenu.FormularioProfe
         {
             InitializeComponent();
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            FormularioProfe.frmProfeComprobar profe = new FormularioProfe.frmProfeComprobar();
+            profe.Show();
+            this.Hide();
+        }
     }
 }

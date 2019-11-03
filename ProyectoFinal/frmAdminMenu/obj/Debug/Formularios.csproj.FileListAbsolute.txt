@@ -12,7 +12,7 @@ C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\Formularios.cspr
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.exe
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.pdb
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormulariosAdmin.frmAdminGrado.resources
-C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormularioProfe.FrmIngresoNotasProfe.resources
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormularioProfe.frmIngresarNotasProfe.resources
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormulariosEstudents.frmInformeNotasEstudiante.resources
 C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormulariosEstudents.frmVerNotasEstudiante.resources
+C:\Users\Tony\source\repos\ProyectoFinal\frmAdminMenu\obj\Debug\frmAdminMenu.FormularioProfe.frmProfeComprobar.resources

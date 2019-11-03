@@ -11,6 +11,7 @@ updated datetime,
 deleted datetime,
 )
 
+
 alter table grado add constraint pk_grado primary key (id_grado)
 
 --proceso de agregar

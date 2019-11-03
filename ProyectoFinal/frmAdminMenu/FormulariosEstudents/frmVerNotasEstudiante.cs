@@ -28,5 +28,18 @@ namespace frmAdminMenu.FormulariosEstudents
         {
 
         }
+
+        private void BtnVerNotas_Click(object sender, EventArgs e)
+        {
+            FormulariosEstudents.frmInformeNotasEstudiante informe = new FormulariosEstudents.frmInformeNotasEstudiante();
+            informe.Show();
+            this.Hide();
+
+        }
+
+        private void CmbAnio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

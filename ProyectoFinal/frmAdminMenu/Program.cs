@@ -16,7 +16,7 @@ namespace frmAdminMenu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdminMenu());
+            Application.Run(new FormulariosEstudents.frmVerNotasEstudiante());
         }
     }
 }
