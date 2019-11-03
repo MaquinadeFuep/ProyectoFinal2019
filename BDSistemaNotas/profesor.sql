@@ -2,6 +2,7 @@ use SistemaNotas
 
 create table profesores
 (
+id_profesor int identity (0,1) not null,
 escalafon varchar (15) not null,
 dui varchar (10) not null,
 nombre varchar (50) not null,
@@ -18,7 +19,7 @@ updated datetime,
 deleted datetime
 )
 
-alter table profesores add constraint pk_profesor primary key (escalafon)
+alter table profesores add constraint pk_profesor primary key (id_profesor)
 
 
 --Procedimiento para agregar profesor
@@ -33,12 +34,18 @@ create procedure spu_agregar_profesor
 @telefono varchar (10),
 @direccion varchar (70),
 @genero varchar (10),
-@salario money
+@salario money,
+@contrasenia varchar (50),
+@rol varchar (20)
 as
 insert into profesores (escalafon,dui, nombre, apellido, fecha_nacimiento, estado_civil, telefono, direccion, genero, salario)
 values (@idprofesor,@dui, @nombre, @apellido, @fecha_nacimiento, @estado, @telefono, @direccion, @genero, @salario)
 
-exec spu_agregar_profesor 
+insert into usuario (idUsuario, username, contrasenia, rol)
+values (@idprofesor, @idprofesor, @contrasenia, @rol)
+
+exec spu_agregar_profesor '0049043943', '09876543-2', 'Alfredo', 'Pacheco', '12/02/1986', 'Casado', '7382-0937', 'Enrique Segoviano', 'Masculino', 400, 'Profe1', 'Profesor'
+
 
 
 --Procedimiento para eliminación logica de profesor
@@ -64,7 +71,8 @@ create procedure spu_modificacion_profesor
 @telefono varchar (10),
 @direccion varchar (70),
 @genero varchar (10),
-@salario money
+@salario money,
+@contraseña varchar (50)
 as
 update profesores
 set nombre = @nombre,
@@ -77,5 +85,9 @@ set nombre = @nombre,
 	salario = @salario,
 	updated=getdate()
 where escalafon = @id
+update usuarios
+set nombre = @nombre,
+	contrasenia = @contraseña
+	where username=@id
 
-exec spu_modificacion_profesor 
+
