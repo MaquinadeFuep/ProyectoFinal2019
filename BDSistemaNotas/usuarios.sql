@@ -4,7 +4,7 @@ use SistemaNotas
 
 create table usuario 
 (
-idUsuario varchar (15) not null,
+idUsuario int identity not null,
 username varchar (50) not null,
 contrasenia varchar (50) not null,
 rol varchar (20) not null,
