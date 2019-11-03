@@ -3,35 +3,38 @@ use SistemaNotas
 
 create table materia
 (
-id_materia varchar (15) not null,
+id_materia int identity (0,1) not null,
 nombre varchar (50) not null, 
 horas_semanales int not null,
 tipo_materia varchar (25) not null,
+anio int not null,
 estado int default (1) not null,
 created datetime default (getdate()) ,
 updated datetime,
 deleted datetime
 )
+
 alter table materia add constraint pk_materia primary key (id_materia)
 
 
 --Procedimiento de agregacion-----------------------------------
+
 create procedure spu_agregarmateria
-@codigo varchar (15), 
 @nombre  varchar (50),
 @horas int,
 @tipomateria varchar (25)
 as
-insert into materia(id_materia,nombre,horas_semanales,tipo_materia)
-values (@codigo,@nombre,@horas,@tipomateria)
+insert into materia(nombre,horas_semanales,tipo_materia)
+values (@nombre,@horas,@tipomateria)
 
 
 exec spu_agregarmateria 
 
 
 ---Procedimiento de borrado-----------------
+
 create procedure spu_borrarmateria
-@codigo varchar (15)
+@codigo int 
 as
 update materia
 set estado = 0,
@@ -44,7 +47,7 @@ exec spu_borrarmateria
 
 --Actualizar-----------------------
 create procedure spu_modificarmateria
-@codigo varchar (15), 
+@codigo int , 
 @nombre  varchar (50),
 @horas int,
 @tipomateria varchar (25)
@@ -55,7 +58,6 @@ update materia set  nombre=@nombre,
 					updated = getdate() 
 where id_materia = @codigo
 
-exec spu_modificarmateria 
 
 
 
