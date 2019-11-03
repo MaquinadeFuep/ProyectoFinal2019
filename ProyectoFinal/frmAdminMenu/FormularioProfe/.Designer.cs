@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbEspecialidadProfe = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.cmbSeccionProfe = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnIngresarProfe = new System.Windows.Forms.Button();
@@ -47,27 +45,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbEspecialidadProfe
-            // 
-            this.cmbEspecialidadProfe.FormattingEnabled = true;
-            this.cmbEspecialidadProfe.Items.AddRange(new object[] {
-            "General",
-            "ITSI"});
-            this.cmbEspecialidadProfe.Location = new System.Drawing.Point(236, 223);
-            this.cmbEspecialidadProfe.Name = "cmbEspecialidadProfe";
-            this.cmbEspecialidadProfe.Size = new System.Drawing.Size(126, 21);
-            this.cmbEspecialidadProfe.TabIndex = 89;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(73, 217);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 26);
-            this.label3.TabIndex = 88;
-            this.label3.Text = "Especialidad";
             // 
             // cmbSeccionProfe
             // 
@@ -93,7 +70,7 @@
             // btnIngresarProfe
             // 
             this.btnIngresarProfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarProfe.Location = new System.Drawing.Point(128, 377);
+            this.btnIngresarProfe.Location = new System.Drawing.Point(153, 360);
             this.btnIngresarProfe.Name = "btnIngresarProfe";
             this.btnIngresarProfe.Size = new System.Drawing.Size(102, 61);
             this.btnIngresarProfe.TabIndex = 79;
@@ -184,7 +161,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(74, 267);
+            this.label7.Location = new System.Drawing.Point(71, 225);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 26);
             this.label7.TabIndex = 94;
@@ -192,7 +169,7 @@
             // 
             // txtEscalafonProfesorNotas
             // 
-            this.txtEscalafonProfesorNotas.Location = new System.Drawing.Point(236, 273);
+            this.txtEscalafonProfesorNotas.Location = new System.Drawing.Point(233, 231);
             this.txtEscalafonProfesorNotas.Name = "txtEscalafonProfesorNotas";
             this.txtEscalafonProfesorNotas.Size = new System.Drawing.Size(124, 20);
             this.txtEscalafonProfesorNotas.TabIndex = 95;
@@ -201,7 +178,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(74, 307);
+            this.label9.Location = new System.Drawing.Point(71, 265);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(75, 26);
             this.label9.TabIndex = 96;
@@ -215,7 +192,7 @@
             "2",
             "3",
             "4"});
-            this.comboBox1.Location = new System.Drawing.Point(237, 313);
+            this.comboBox1.Location = new System.Drawing.Point(234, 271);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(126, 21);
             this.comboBox1.TabIndex = 97;
@@ -234,8 +211,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbEspecialidadProfe);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbSeccionProfe);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnIngresarProfe);
@@ -252,9 +227,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbEspecialidadProfe;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbSeccionProfe;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnIngresarProfe;

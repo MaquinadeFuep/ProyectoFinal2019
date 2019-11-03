@@ -28,46 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cmbTipoMateria = new System.Windows.Forms.ComboBox();
+            this.txtHorasSemanales = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvMateria = new System.Windows.Forms.DataGridView();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtIdMateria = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBusquedaID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtBusquedaNombreApellido = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // cmbTipoMateria
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.comboBox2.Location = new System.Drawing.Point(223, 227);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(126, 21);
-            this.comboBox2.TabIndex = 71;
+            this.cmbTipoMateria.Enabled = false;
+            this.cmbTipoMateria.FormattingEnabled = true;
+            this.cmbTipoMateria.Items.AddRange(new object[] {
+            "Basica",
+            "Seminario"});
+            this.cmbTipoMateria.Location = new System.Drawing.Point(223, 227);
+            this.cmbTipoMateria.Name = "cmbTipoMateria";
+            this.cmbTipoMateria.Size = new System.Drawing.Size(126, 21);
+            this.cmbTipoMateria.TabIndex = 71;
             // 
-            // textBox7
+            // txtHorasSemanales
             // 
-            this.textBox7.Location = new System.Drawing.Point(223, 188);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(124, 20);
-            this.textBox7.TabIndex = 69;
+            this.txtHorasSemanales.Location = new System.Drawing.Point(223, 188);
+            this.txtHorasSemanales.Name = "txtHorasSemanales";
+            this.txtHorasSemanales.Size = new System.Drawing.Size(124, 20);
+            this.txtHorasSemanales.TabIndex = 69;
             // 
             // label10
             // 
@@ -79,58 +78,58 @@
             this.label10.TabIndex = 68;
             this.label10.Text = "Tipo de materia";
             // 
-            // dataGridView1
+            // dgvMateria
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(427, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(364, 359);
-            this.dataGridView1.TabIndex = 67;
+            this.dgvMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMateria.Location = new System.Drawing.Point(427, 81);
+            this.dgvMateria.Name = "dgvMateria";
+            this.dgvMateria.Size = new System.Drawing.Size(364, 359);
+            this.dgvMateria.TabIndex = 67;
             // 
-            // button4
+            // btnEliminar
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(129, 474);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 32);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(129, 485);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(105, 32);
+            this.btnEliminar.TabIndex = 66;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnNuevo
             // 
-            this.button3.Location = new System.Drawing.Point(146, 430);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Nuevo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNuevo.Location = new System.Drawing.Point(146, 441);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 65;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.Location = new System.Drawing.Point(259, 430);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(259, 441);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 64;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(47, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(47, 441);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 63;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtIdMateria
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 20);
-            this.textBox1.TabIndex = 62;
+            this.txtIdMateria.Location = new System.Drawing.Point(223, 96);
+            this.txtIdMateria.Name = "txtIdMateria";
+            this.txtIdMateria.Size = new System.Drawing.Size(124, 20);
+            this.txtIdMateria.TabIndex = 62;
             // 
             // label9
             // 
@@ -172,12 +171,12 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Materia";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 20);
-            this.textBox2.TabIndex = 72;
+            this.txtNombre.Location = new System.Drawing.Point(223, 140);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(124, 20);
+            this.txtNombre.TabIndex = 72;
             // 
             // label3
             // 
@@ -189,12 +188,12 @@
             this.label3.TabIndex = 73;
             this.label3.Text = "Buscar materia por ID";
             // 
-            // textBox3
+            // txtBusquedaID
             // 
-            this.textBox3.Location = new System.Drawing.Point(281, 336);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(124, 20);
-            this.textBox3.TabIndex = 74;
+            this.txtBusquedaID.Location = new System.Drawing.Point(281, 336);
+            this.txtBusquedaID.Name = "txtBusquedaID";
+            this.txtBusquedaID.Size = new System.Drawing.Size(124, 20);
+            this.txtBusquedaID.TabIndex = 74;
             // 
             // label4
             // 
@@ -206,12 +205,12 @@
             this.label4.TabIndex = 75;
             this.label4.Text = "Buscar materia por Nombre";
             // 
-            // textBox4
+            // txtBusquedaNombreApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(281, 380);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(124, 20);
-            this.textBox4.TabIndex = 76;
+            this.txtBusquedaNombreApellido.Location = new System.Drawing.Point(281, 380);
+            this.txtBusquedaNombreApellido.Name = "txtBusquedaNombreApellido";
+            this.txtBusquedaNombreApellido.Size = new System.Drawing.Size(124, 20);
+            this.txtBusquedaNombreApellido.TabIndex = 76;
             // 
             // frmAdminMateria
             // 
@@ -219,27 +218,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(822, 542);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtBusquedaNombreApellido);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtBusquedaID);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.cmbTipoMateria);
+            this.Controls.Add(this.txtHorasSemanales);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgvMateria);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtIdMateria);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAdminMateria";
             this.Text = " Materia";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,23 +246,23 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox cmbTipoMateria;
+        private System.Windows.Forms.TextBox txtHorasSemanales;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvMateria;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox txtIdMateria;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBusquedaID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBusquedaNombreApellido;
     }
 }

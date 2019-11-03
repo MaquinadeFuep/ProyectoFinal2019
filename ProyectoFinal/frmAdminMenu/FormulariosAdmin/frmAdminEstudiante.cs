@@ -18,6 +18,8 @@ namespace frmAdminMenu
             cmbGeneroEstudiante.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbGradoEstudiante.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbSeccionEstudiante.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPeriodo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbanio.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void TxtNIE_TextChanged(object sender, EventArgs e)
@@ -32,6 +34,19 @@ namespace frmAdminMenu
 
         private void FrmAdminEstudiante_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void CmbGeneroEstudiante_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            frmAdminMenu menu = new frmAdminMenu();
+            menu.Show();
+            this.Hide();
 
         }
     }
