@@ -15,19 +15,8 @@ alter table alumnos add constraint fk_grado foreign key (id_grado) references gr
 alter table estudiante_materia add constraint fk_alumno foreign key (id_alumno) references alumnos (id_alumno)
 alter table estudiante_materia add constraint fk_materia foreign key (id_materia) references materia (id_materia)
 
-alter table nota add constraint fk_materia1 foreign key (id_materia) references materia (id_materia)
+alter table notas add constraint fk_materia1 foreign key (id_materia) references materia (id_materia)
 
 alter table profesor_materia add constraint fk_profesor foreign key (id_profesor) references profesor (id_profesor)
 alter table profesor_materia add constraint fk_materia2 foreign key (id_materia1) references materia (id_materia)
-
-
-
-
-alter table grado add constraint fk_especialidad foreign key (id_especialidad) references especialidad (id_especialidad)
-
-
-
-
-
-
 

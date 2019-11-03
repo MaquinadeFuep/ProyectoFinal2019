@@ -19,8 +19,6 @@ updated datetime,
 deleted datetime
 )
 
-
-
 alter table alumnos add constraint pk_alumnos primary key (id_alumnos)
 
 create procedure spu_agregarestudiante_usuario
