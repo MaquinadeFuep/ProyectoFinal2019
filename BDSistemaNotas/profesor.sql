@@ -58,7 +58,7 @@ set estado=0 ,
 	deleted=getdate()
 where escalafon=@id
 
-exec spu_borradoLogico_profesor ''
+exec spu_borradoLogico_profesor 
  
  --Procedimiento para modificación de profesor
  

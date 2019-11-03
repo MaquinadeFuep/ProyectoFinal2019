@@ -11,16 +11,7 @@ updated datetime,
 deleted datetime,
 )
 
-<<<<<<< HEAD
-alter table grado add id_especialidad varchar (15) not null
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e87ad8723e6015a87cf4ea7e6f0959ed0f0f3806
-
-=======
->>>>>>> 501311b617478711649d68fab17ef1c4dcb1e62f
 alter table grado add constraint pk_grado primary key (id_grado)
 
 --proceso de agregar
